@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ottogi</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
@@ -90,8 +90,8 @@
     #header_box2>ul>li:first-child{background: none;}
     #header_box2>ul>li:hover{border-bottom: 3px solid #dc2c34; cursor: pointer;}
 
-    #slide{width: 100%;height: 530px; background-color: green; position: relative;}
-    #slide_imgbox{width: 800%; height: 530px; position: absolute;}
+    #slide{width: 100%;height: 530px; background-color: green; position: relative; overflow: hidden;}
+    #slide_imgbox{width: 800%; height: 530px; position: absolute; overflow: hidden;}
     #slide_imgbox>li{width: 12.5%; height: 530px; float: left;}
     #slide_imgbox>li:nth-child(1){background: url(images/img_visual22.jpg) center no-repeat; background-size: cover;}
     #slide_imgbox>li:nth-child(2){background: url(images/img_visual24.jpg) center no-repeat; background-size: cover;}
@@ -104,8 +104,8 @@
     #slide_btn{text-align: center; position: absolute;width: 100%;left: 0;bottom: 30px;}
     #slide_btn>li{width: 10px;height: 10px;border-radius: 10px;display: inline-block; background-color: #fff;}
     #slide_btn>li:nth-child(1){background-color: #ff0;}
-    #slide_leftbtn{width: 40px;height: 60px; position: absolute; left: 20px; top: 0; bottom: 0; margin: auto; background: url(icons/bx-prev2.png)0 center; }
-    #slide_rightbtn{width: 40px;height: 60px;position: absolute;right: 20px;top: 0;bottom: 0;margin: auto;background: url(icons/bx-next2.png)0 center;}
+    #slide_leftbtn{width: 40px;height: 60px; position: absolute; left: 20px; top: 0; bottom: 0; margin: auto; background: url(icons/bx-prev2.png) 0 center; }
+    #slide_rightbtn{width: 40px;height: 60px;position: absolute;right: 20px;top: 0;bottom: 0;margin: auto;background: url(icons/bx-next2.png) 0 center;}
 
     #section_menu{width: 1200px; height: 288px; margin: auto; margin-top: 20px;}
     #section_menu>ul>li{width: 288px; height: 288px; margin-right: 16px; background-color: #3ff; float: left; text-align: center; color: #fff;}
@@ -158,7 +158,7 @@
 
     #event3{width: 25%; height: 400px;float: left; text-align: center;}
     #event3_box{width: 100%; height: 300px; overflow: hidden; text-align: center; margin-top: 30px; position: relative;}
-    #event3_img{width: 100%px;height: 300px; transform:scale(1.02); transition: 0.5s;}
+    #event3_img{width: 100%;height: 300px; transform:scale(1.02); transition: 0.5s;}
     #event3_img:hover{transform: scale(1);}
     #flag_new2{width: 40px; height: 40px;position: absolute; top: 25px; right: 10px; z-index: 999;}
     #event3>h4{font-size: 18px; font-weight: 100;}
@@ -253,28 +253,30 @@
     </header>
 
     <div id="slide">
-        <ul id="slide_imgbox">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <div id="slide_leftbtn"></div>
-        <div id="slide_rightbtn"></div>
-        <ul id="slide_btn">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <div id="wrap">
+                <ul id="slide_imgbox">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div id="slide_leftbtn"></div>
+            <div id="slide_rightbtn"></div>
+            <ul id="slide_btn">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
     </div>
     <div id="section_menu">
         <ul>
